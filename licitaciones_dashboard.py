@@ -18,7 +18,7 @@ df = load_data()
 
 st.title("📊 Análisis de Licitaciones")
 
-# -- Instituciones que licitan (únicas por código de licitación) --
+# -- Instituciones que licitan --
 st.markdown("### 🏢 ¿Qué instituciones licitan más?")
 
 # Agrupar por institución y contar códigos de licitación únicos
@@ -155,19 +155,19 @@ with col:
     st_folium(m, width=700, height=450)
 
 
-# -- Conclusiones del análisis --
-st.markdown("## 📌 Conclusiones y Observaciones")
+# -- Observaciones del análisis exploratorio --
+st.markdown("### 📌 Observaciones del análisis exploratorio")
 
 st.markdown("""
-A partir del análisis exploratorio realizado, se pueden destacar algunos puntos relevantes:
+A partir del análisis de las licitaciones, se pueden destacar las siguientes observaciones:
 
-- Las **instituciones que más licitan** están concentradas en ciertas provincias o jurisdicciones, lo cual puede estar relacionado con la magnitud de su población o presupuesto.
-- Se observa un **aumento de licitaciones en ciertos meses**, especialmente en los meses de apertura fiscal o previo a fin de año, lo cual podría estar vinculado a planificación presupuestaria.
-- Algunos productos concentran un alto volumen de licitaciones, pero no necesariamente por cantidad de procesos, sino por volumen total solicitado. Por ejemplo:
-    - 🥛 *Leche en polvo* aparece como uno de los productos más solicitados en volumen.
-    - 🥫 *Alimentos no perecederos* figuran entre los más licitados en cantidad.
-- En el mapa se aprecia una **concentración geográfica** de licitaciones en centros urbanos, lo cual puede guiar decisiones logísticas o de distribución.
-- Al seleccionar un producto específico, es posible ver qué instituciones lo solicitan más y a qué instituciones destino se dirigen, lo cual brinda insights sobre la distribución y necesidades del sistema público.
+- **Estacionalidad de licitaciones**: Se observa que las licitaciones no se distribuyen de forma uniforme a lo largo del año. Los meses con mayor actividad son **febrero (9 licitaciones)**, **abril (8)** y **enero (4)**, mientras que en **marzo, mayo, julio** y los últimos meses del año la actividad es prácticamente nula o muy baja. Esto sugiere cierta estacionalidad en la demanda de productos, posiblemente relacionada con ciclos administrativos o presupuestarios.
+
+- **Productos más licitados**: En términos de cantidad de licitaciones, el producto más frecuentemente solicitado es **Fortisip Vainilla botella x 200 ml (14 licitaciones)**, seguido de **Nutrison Advanced Diason Pack x 1 (10)** y **KAS 1000 lata x 400g (9)**. Estos productos parecen tener alta demanda constante entre instituciones.
+
+- **Volumen total solicitado**: Si se analiza el volumen total de unidades solicitadas, se observa que **KAS 1000 lata x 400g** lidera con **32.694 unidades**, seguido de **Fortisip Vainilla botella x 200 ml (32.259)** y **Vital AR lata x 400g (30.809)**. Esto indica que, además de ser productos frecuentemente licitados, tienen pedidos en grandes cantidades, lo que podría implicar un uso intensivo o necesidad crítica.
+
+- **Distribución geográfica**: El mapa muestra que las instituciones que realizan licitaciones se concentran mayormente en la **zona central del país**, con fuerte presencia en **Ciudad Autónoma de Buenos Aires, zona norte del Gran Buenos Aires y alrededores**. Se detecta **poca actividad en el norte del país** y prácticamente **ninguna en el sur**, lo que podría estar relacionado con la disponibilidad de infraestructura, presupuestos regionales o centralización de la logística.
 
 Este tablero permite a responsables de compras, logística o planificación identificar patrones clave y tomar decisiones basadas en datos.
 """)
