@@ -67,7 +67,7 @@ resumen = (
     .sort_values(by='Cantidad', ascending=False)
 )
 
-resumen.columns = ['Institución que Pide',
+resumen.columns = ['Institución que abrió la licitación',
                    'Institución Destino', 'Cantidad Total']
 resumen['Cantidad Total'] = resumen['Cantidad Total'].map('{:,.0f}'.format)
 
@@ -82,7 +82,7 @@ with st.expander("🔎 Ver detalle por institución", expanded=True):
 fig = px.bar(
     resumen,
     x='Cantidad Total',
-    y='Institución que Pide',
+    y='Institución que abrió la licitación',
     color='Institución Destino',
     orientation='h',
     text='Cantidad Total',
