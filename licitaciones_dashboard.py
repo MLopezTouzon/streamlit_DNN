@@ -146,3 +146,21 @@ for _, row in instituciones_geo.iterrows():
 col = st.columns([0.1, 0.8, 0.1])[1]
 with col:
     st_folium(m, width=700, height=450)
+
+
+# -- Conclusiones del análisis --
+st.markdown("## 📌 Conclusiones y Observaciones")
+
+st.markdown("""
+A partir del análisis exploratorio realizado, se pueden destacar algunos puntos relevantes:
+
+- Las **instituciones que más licitan** están concentradas en ciertas provincias o jurisdicciones, lo cual puede estar relacionado con la magnitud de su población o presupuesto.
+- Se observa un **aumento de licitaciones en ciertos meses**, especialmente en los meses de apertura fiscal o previo a fin de año, lo cual podría estar vinculado a planificación presupuestaria.
+- Algunos productos concentran un alto volumen de licitaciones, pero no necesariamente por cantidad de procesos, sino por volumen total solicitado. Por ejemplo:
+    - 🥛 *Leche en polvo* aparece como uno de los productos más solicitados en volumen.
+    - 🥫 *Alimentos no perecederos* figuran entre los más licitados en cantidad.
+- En el mapa se aprecia una **concentración geográfica** de licitaciones en centros urbanos, lo cual puede guiar decisiones logísticas o de distribución.
+- Al seleccionar un producto específico, es posible ver qué instituciones lo solicitan más y a qué instituciones destino se dirigen, lo cual brinda insights sobre la distribución y necesidades del sistema público.
+
+Este tablero permite a responsables de compras, logística o planificación identificar patrones clave y tomar decisiones basadas en datos.
+""")
