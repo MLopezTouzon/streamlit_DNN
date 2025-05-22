@@ -31,7 +31,7 @@ top_inst.columns = ['Institución', 'Cantidad']
 
 # Gráfico
 fig = px.pie(top_inst, names='Institución', values='Cantidad',
-             title='Top 10 Instituciones que Abren Licitaciones (únicas)', hole=0.3)
+             title='Top 10 Instituciones que Abren Licitaciones', hole=0.3)
 fig.update_layout(margin=dict(l=40, r=40, t=40, b=40))
 st.plotly_chart(fig, use_container_width=True)
 
