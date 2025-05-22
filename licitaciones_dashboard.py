@@ -18,13 +18,20 @@ df = load_data()
 
 st.title("📊 Análisis de Licitaciones")
 
-# -- Instituciones que licitan --
+# -- Instituciones que licitan (únicas por código de licitación) --
 st.markdown("### 🏢 ¿Qué instituciones licitan más?")
-top_inst = df['Institución que abrió la licitación'].value_counts().head(
+
+# Agrupar por institución y contar códigos de licitación únicos
+top_inst = df.dropna(subset=['Código de licitación']).drop_duplicates(
+    subset=['Institución que abrió la licitación', 'Código de licitación']
+)
+top_inst = top_inst['Institución que abrió la licitación'].value_counts().head(
     10).reset_index()
 top_inst.columns = ['Institución', 'Cantidad']
+
+# Gráfico
 fig = px.pie(top_inst, names='Institución', values='Cantidad',
-             title='Top 10 Instituciones que Abren Licitaciones', hole=0.3)
+             title='Top 10 Instituciones que Abren Licitaciones (únicas)', hole=0.3)
 fig.update_layout(margin=dict(l=40, r=40, t=40, b=40))
 st.plotly_chart(fig, use_container_width=True)
 
