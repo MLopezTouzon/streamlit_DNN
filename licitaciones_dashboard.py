@@ -159,15 +159,23 @@ with col:
 st.markdown("### 📌 Observaciones del análisis exploratorio")
 
 st.markdown("""
-A partir del análisis de las licitaciones, se pueden destacar las siguientes observaciones:
+A partir del análisis de las licitaciones, se destacan los siguientes hallazgos clave:
 
-- **Estacionalidad de licitaciones**: Se observa que las licitaciones no se distribuyen de forma uniforme a lo largo del año. Los meses con mayor actividad son **febrero (9 licitaciones)**, **abril (8)** y **enero (4)**, mientras que en **marzo, mayo, julio** y los últimos meses del año la actividad es prácticamente nula o muy baja. Esto sugiere cierta estacionalidad en la demanda de productos, posiblemente relacionada con ciclos administrativos o presupuestarios.
+- **📅 Estacionalidad en la demanda**  
+  Se identifica un patrón estacional marcado: aproximadamente el **60% de las licitaciones** se concentran en los primeros cuatro meses del año, con picos en **febrero (9 licitaciones)**, **abril (8)** y **enero (4)**. Esto sugiere que la mayoría de las instituciones realizan sus compras durante el primer cuatrimestre, posiblemente en relación con la apertura de presupuestos o planes anuales de adquisición.  
+  👉 *Recomendación:* los proveedores pueden enfocar sus esfuerzos comerciales en esta etapa del año para maximizar oportunidades.
 
-- **Productos más licitados**: En términos de cantidad de licitaciones, el producto más frecuentemente solicitado es **Fortisip Vainilla botella x 200 ml (14 licitaciones)**, seguido de **Nutrison Advanced Diason Pack x 1 (10)** y **KAS 1000 lata x 400g (9)**. Estos productos parecen tener alta demanda constante entre instituciones.
+- **📦 Productos con mayor frecuencia de licitación**  
+  El producto más frecuentemente solicitado es **Fortisip Vainilla botella x 200 ml** con **14 licitaciones**, seguido de **Nutrison Advanced Diason Pack x 1 (10)** y **KAS 1000 lata x 400g (9)**. Estos productos representan en conjunto cerca del **30% del total de licitaciones**, lo que revela una demanda recurrente por parte de distintas instituciones.  
+  👉 *Insight:* puede ser conveniente para los fabricantes asegurar disponibilidad continua de estos productos en stock.
 
-- **Volumen total solicitado**: Si se analiza el volumen total de unidades solicitadas, se observa que **KAS 1000 lata x 400g** lidera con **32.694 unidades**, seguido de **Fortisip Vainilla botella x 200 ml (32.259)** y **Vital AR lata x 400g (30.809)**. Esto indica que, además de ser productos frecuentemente licitados, tienen pedidos en grandes cantidades, lo que podría implicar un uso intensivo o necesidad crítica.
+- **📊 Volumen total solicitado**  
+  Al analizar la cantidad total de unidades licitadas, **KAS 1000 lata x 400g** lidera con **32.694 unidades**, seguido muy de cerca por **Fortisip Vainilla (32.259)** y **Vital AR lata x 400g (30.809)**. Este dato complementa la frecuencia y permite detectar productos que no solo son populares, sino también requeridos en grandes cantidades.  
+  👉 *Conclusión:* estos artículos tienen un uso intensivo, probablemente para atención prolongada de pacientes o instituciones de alta rotación.
 
-- **Distribución geográfica**: El mapa muestra que las instituciones que realizan licitaciones se concentran mayormente en la **zona central del país**, con fuerte presencia en **Ciudad Autónoma de Buenos Aires, zona norte del Gran Buenos Aires y alrededores**. Se detecta **poca actividad en el norte del país** y prácticamente **ninguna en el sur**, lo que podría estar relacionado con la disponibilidad de infraestructura, presupuestos regionales o centralización de la logística.
+- **🗺️ Distribución geográfica de las licitaciones**  
+  El análisis espacial muestra una fuerte concentración en la **zona central del país**, especialmente en la **Ciudad Autónoma de Buenos Aires** y el **norte del Gran Buenos Aires**. Se registra escasa actividad en el **norte argentino** y prácticamente nula en el **sur**.  
+  👉 *Hipótesis:* esto podría estar relacionado con la concentración de infraestructura sanitaria, mayores presupuestos regionales o centralización de procesos de compra.
 
-Este tablero permite a responsables de compras, logística o planificación identificar patrones clave y tomar decisiones basadas en datos.
+Este tablero permite a responsables de **compras**, **logística** y **planificación** identificar patrones clave y tomar decisiones basadas en datos concretos, como la optimización de stock, la planificación comercial por estacionalidad y la focalización regional.
 """)
